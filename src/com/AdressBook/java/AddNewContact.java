@@ -1,7 +1,6 @@
 package com.AdressBook.java;
 
 public class AddNewContact {
-
 	private String firstName;
 	private String lastName;
 	private String address;
@@ -63,7 +62,7 @@ public class AddNewContact {
 		return mobileNum;
 	}
 
-	public void setMobileNum(String mobileNum) {
+	public void setMobileNum( String mobileNum) {
 		this.mobileNum = mobileNum;
 	}
 
@@ -74,13 +73,12 @@ public class AddNewContact {
 	public void setEmailId(String emailId) {
 		this.emailId = emailId;
 	}
-
+	
 	public String toString() {
-		return "Contact [firstName=" + firstName + ", lastName=" + lastName + ", address=" + address + ", city=" + city
-				+ ", state=" + state + ", zipCode=" + zipCode + ", mobileNo=" + mobileNum + ", emailID=" + emailId
-				+ "]";
-
-		
+		 return "Contact [firstName=" + firstName + ", lastName=" + lastName + ", address=" + address + ", city=" + city
+				+ ", state=" + state + ", zipCode=" + zipCode + ", mobileNo=" + mobileNum + ", emailID=" + emailId + "]";
+	
 	}
+	
 
 }
