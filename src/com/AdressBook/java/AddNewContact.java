@@ -80,6 +80,7 @@ public class AddNewContact {
 				+ ", state=" + state + ", zipCode=" + zipCode + ", mobileNo=" + mobileNum + ", emailID=" + emailId
 				+ "]";
 
+		
 	}
 
 }
