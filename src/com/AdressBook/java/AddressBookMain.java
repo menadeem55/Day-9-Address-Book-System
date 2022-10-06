@@ -30,7 +30,7 @@ public class AddressBookMain {
 				break;
 
 			}
-		} while (Number != 3);
+		} while (Number < 4);
 	}
 
 }
