@@ -6,8 +6,8 @@ public class AddNewContact {
 	private String address;
 	private String city;
 	private String state;
-	private String zipCode;
-	private String mobileNum;
+	private double zipCode;
+	private double mobileNum;
 	private String emailId;
 
 	public String getFirstName() {
@@ -50,19 +50,19 @@ public class AddNewContact {
 		this.state = state;
 	}
 
-	public String getZipCode() {
+	public double getZipCode() {
 		return zipCode;
 	}
 
-	public void setZipCode(String zipCode) {
+	public void setZipCode(double zipCode) {
 		this.zipCode = zipCode;
 	}
 
-	public String getMobileNum() {
+	public double getMobileNum() {
 		return mobileNum;
 	}
 
-	public void setMobileNum( String mobileNum) {
+	public void setMobileNum( double mobileNum) {
 		this.mobileNum = mobileNum;
 	}
 

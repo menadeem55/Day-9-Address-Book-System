@@ -38,6 +38,7 @@ public class AddressBook {
 		}
 
 	}
+
 	public void editContact() {
 
 		System.out.println("Enter the First Name to Edit : ");
@@ -70,5 +71,24 @@ public class AddressBook {
 		if (IsAvaible == false) {
 			System.out.println("Not Availabe");
 		}
-}
+
+	}
+
+	public void deleteContact() {
+		System.out.println("Enter the First Name to Delete: ");
+		String FirstName = (sc.next());
+		boolean IsAvaible = false;
+
+		for (AddNewContact contact : contactArrayList) {
+			if (contact.getFirstName().equalsIgnoreCase(FirstName)) {
+				IsAvaible = true;
+				contactArrayList.remove(contact);
+				System.out.println("Deleted!!");
+				break;
+			}
+		}
+		if (IsAvaible == false) {
+			System.out.println("Not Availabe");
+		}
+	}
 }

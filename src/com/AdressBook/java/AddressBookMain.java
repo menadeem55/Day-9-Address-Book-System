@@ -1,18 +1,17 @@
 package com.AdressBook.java;
 
 import java.util.*;
-
 public class AddressBookMain {
 
 	public static void main(String[] args) {
-		System.out.println("Welcome To Address Book");
+		System.out.println("Welcome To Address Book \n");
 		AddressBook addressBook = new AddressBook();
 		Scanner sc = new Scanner(System.in);
 
 		int Number;
 
 		do {
-			System.out.println(" 1. Add Contact \n 2. Display contact \n");
+			System.out.println(" 1. Add Contact \n 2. Display contact \n 3. Edit contact \n 4. Delete Contact \n");
 			System.out.println("Enter the  Number: ");
 
 			Number = sc.nextInt();
@@ -25,12 +24,19 @@ public class AddressBookMain {
 			case 2:
 				addressBook.displayContact();
 				break;
-			default:
-				System.out.println(" Invalid Input! ");
+			case 3:
+				addressBook.editContact();
+				break;
+			case 4:
+				addressBook.deleteContact();
 				break;
 
+			default:
+				System.out.println(" Invalid Input!!! ");
+				break;
+			
 			}
-		} while (Number != 3);
+		} while (Number != 4);
 	}
 
 }
