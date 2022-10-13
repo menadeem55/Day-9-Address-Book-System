@@ -71,7 +71,6 @@ public class AddressBook {
 		if (IsAvaible == false) {
 			System.out.println("Not Availabe");
 		}
-
 	}
 
 	public void deleteContact() {
